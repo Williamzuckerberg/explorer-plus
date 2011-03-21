@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AboutDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="BookmarkToolbarDropHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="AddBookmarkDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressBarHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationToolbarDropHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ApplicationToolbarHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrangeMenuHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="BookmarkHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="BookmarkPropertiesDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeDisplayWindowDetailsDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DrivesToolbarHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorRuleDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomizeColorsDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DestroyFilesDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayColoursDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayWindowLinePropertiesDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSwitcher.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Explorer++.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="FilterDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="HandleWindowState.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="iDropSource.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Initialization.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="ListViewHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MainToolbarHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MainWndSwitch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MassRenameDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeFilesDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="Misc.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="NewBookmarkFolderDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionsDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="OrganizeBookmarksDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="RegistrySettings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="RenameTabDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SearchDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectColumnsDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SetDefaultColumnsDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SetFileAttributesDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>include</Filter>
+    </ClCompile>
+    <ClCompile Include="ShellContextMenuHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TreeViewHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="SplitFileDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TabBackingHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TabDropHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="TabHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="WildcardSelectDialog.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLSettings.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowHandler.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorRuleDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomizeColorsDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="DestroyFilesDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Explorer++.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Explorer++_internal.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="FilterDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="iDropSource.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MainResource.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MassRenameDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="MergeFilesDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="SetFileAttributesDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="NoTranslationResource.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="RenameTabDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="SearchDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectColumnsDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="SetDefaultColumnsDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="SplitFileDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="WildcardSelectDialog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Explorer++_NoTranslation.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Explorer++Main.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Explorer++.rc">
+      <Filter>resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\About Image.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Display Window.ico">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Explorer++.ico">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Explorer++ Small.ico">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Filtering Applied.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Folder Locked.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Folder Empty.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Navigation Start.wav">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\No Preview Available.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Shell Go.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Shell Images.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Shell Images Large.bmp">
+      <Filter>resources</Filter>
+    </None>
+    <None Include="res\Tab Close.bmp">
+      <Filter>resources</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="resources">
+      <UniqueIdentifier>{a782209c-b0ae-44d3-886c-a7f5516e824a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2bd9e2c8-9d2e-4aa5-9085-c9f3335d6774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{2b6c4dd9-4abd-406e-9aa4-0ca9a7c3f1fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="other">
+      <UniqueIdentifier>{be312e3c-0bfe-4f3c-881e-ec0a0943b151}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Explorer++.exe.manifest">
+      <Filter>other</Filter>
+    </Manifest>
+  </ItemGroup>
+</Project>
