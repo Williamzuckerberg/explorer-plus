@@ -1498,16 +1498,12 @@ BOOL Explorerplusplus::OnDrawItem(WPARAM wParam,LPARAM lParam)
 	return TRUE;
 }
 
+//////////////////////////////////////////////////////////////////////////
+
 /* Cycle through the current views. */
 void Explorerplusplus::OnToolbarViews(void)
 {
 	CycleViewState(TRUE);
-}
-
-//bird ,todo
-void Explorerplusplus::OnToolbarSort()
-{
-    CycleViewState(TRUE);
 }
 
 void Explorerplusplus::CycleViewState(BOOL bCycleForward)
@@ -1569,7 +1565,41 @@ void Explorerplusplus::ShowToolbarViewsDropdown(void)
 
     CreateViewsMenu(&ptOrigin);
 }
+//////////////////////////////////////////////////////////////////////////
 
+//bird ,todo
+void Explorerplusplus::OnToolbarSort()
+{
+    CycleSortState(true);
+}
+
+//bird add //todo
+void Explorerplusplus::CycleSortState(bool bCycleForward)
+{
+}
+
+int	Explorerplusplus::GetSortModeMenuId(UINT uViewMode)
+{
+    switch(uViewMode)
+    {
+    case CM_NAME:
+        return IDM_SORTBY_NAME;
+        break;
+    case CM_TYPE:
+        return IDM_SORTBY_TYPE;
+        break;
+    case CM_SIZE:
+        return IDM_SORTBY_SIZE;
+        break;
+    case CM_DATEMODIFIED:
+        return IDM_SORTBY_DATEMODIFIED;
+        break;
+    default:
+        break;
+    }
+
+    return -1;
+}
 //bird add
 void Explorerplusplus::ShowToolbarSortDropdown(void)
 {
@@ -1585,6 +1615,25 @@ void Explorerplusplus::ShowToolbarSortDropdown(void)
 
     CreateSortMenu(&ptOrigin);
 }
+
+//bird add  
+void Explorerplusplus::CreateSortMenu(POINT *ptOrigin)
+{
+    UINT	uSortMode;
+    int		ItemToCheck;
+
+    m_pFolderView[m_iObjectIndex]->GetSortMode(&uSortMode);
+
+    ItemToCheck = GetSortModeMenuId(uSortMode);
+    //from IDM_SORTBY_NAME, to IDM_SORTBY_DATEMODIFIED
+    //m_hViewsMenu
+    CheckMenuRadioItem(m_hArrangeSubMenu,IDM_SORTBY_NAME, IDM_SORTBY_DATEMODIFIED,
+        ItemToCheck,MF_BYCOMMAND);
+
+    TrackPopupMenu(m_hArrangeSubMenu,TPM_LEFTALIGN,ptOrigin->x,ptOrigin->y,
+        0,m_hContainer,NULL);
+}
+//////////////////////////////////////////////////////////////////////////
 
 void Explorerplusplus::OnSortByAscending(BOOL bSortAscending)
 {

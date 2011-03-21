@@ -1826,21 +1826,6 @@ void Explorerplusplus::CreateViewsMenu(POINT *ptOrigin)
 		0,m_hContainer,NULL);
 }
 
-//bird add  
-void Explorerplusplus::CreateSortMenu(POINT *ptOrigin)
-{
-    UINT	uViewMode;
-    int		ItemToCheck;
-
-    m_pFolderView[m_iObjectIndex]->GetCurrentViewMode(&uViewMode);
-
-    ItemToCheck = GetViewModeMenuId(uViewMode);
-    CheckMenuRadioItem(m_hViewsMenu,IDM_VIEW_THUMBNAILS,IDM_VIEW_EXTRALARGEICONS,
-        ItemToCheck,MF_BYCOMMAND);
-
-    TrackPopupMenu(m_hViewsMenu,TPM_LEFTALIGN,ptOrigin->x,ptOrigin->y,
-        0,m_hContainer,NULL);
-}
 
 int Explorerplusplus::CreateDriveFreeSpaceString(TCHAR *szPath,TCHAR *szBuffer,int nBuffer)
 {

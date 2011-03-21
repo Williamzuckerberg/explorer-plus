@@ -969,9 +969,14 @@ private:
 	BOOL					IsNextWindowVisible(HWND hNext);
 	void					ShowMainRebarBand(HWND hwnd,BOOL bShow);
 	BOOL					OnMouseWheel(WPARAM wParam,LPARAM lParam);
-	void					CycleViewState(BOOL bCycleForward);
+
+	void					CycleViewState(BOOL bCycleForward);   
 	int						GetViewModeMenuId(UINT uViewMode);
 	int						GetViewModeMenuStringId(UINT uViewMode);
+
+    void                    CycleSortState(bool bCycleForward); //bird add
+    int						GetSortModeMenuId(UINT uViewMode);
+
 	BOOL					VerifyLanguageVersion(TCHAR *szLanguageModule);
 	HMENU					CreateRebarHistoryMenu(BOOL bBack);
 	void					PlayNavigationSound(void);

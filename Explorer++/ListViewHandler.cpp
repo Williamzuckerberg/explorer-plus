@@ -1181,18 +1181,18 @@ HMENU Explorerplusplus::InitializeRightClickMenu(void)
 	mii.hSubMenu	= m_hGroupBySubMenu;
 	SetMenuItemInfo(hMenu,IDM_POPUP_GROUPBY,FALSE,&mii);
 
-	/*if(uViewMode == VM_DETAILS)
-	{
-		lEnableMenuItem(hMenu,IDM_POPUP_GROUPBY,TRUE);
-	}
-	else if(uViewMode == VM_LIST)
-	{
-		lEnableMenuItem(hMenu,IDM_POPUP_GROUPBY,FALSE);
-	}
-	else
-	{
-		lEnableMenuItem(hMenu,IDM_POPUP_GROUPBY,TRUE);
-	}*/
+	//if(uViewMode == VM_DETAILS)
+	//{
+	//	lEnableMenuItem(hMenu,IDM_POPUP_GROUPBY,TRUE);
+	//}
+	//else if(uViewMode == VM_LIST)
+	//{
+	//	lEnableMenuItem(hMenu,IDM_POPUP_GROUPBY,FALSE);
+	//}
+	//else
+	//{
+	//	lEnableMenuItem(hMenu,IDM_POPUP_GROUPBY,TRUE);
+	//}
 
 	//// Initialization.cpp - InitializeMenus().
 	//InsertMenuItem(m_hRightClickMenu,IDM_VIEW_PLACEHOLDER,FALSE,&mii);
