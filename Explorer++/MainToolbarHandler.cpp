@@ -385,142 +385,157 @@ BYTE Explorerplusplus::LookupToolbarButtonExtraStyles(int iButtonID)
 	return 0;
 }
 
+//void Explorerplusplus::AddStringsToMainToolbar(void)
+//{
+//	TCHAR szText[64];
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_BACK),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_FORWARD),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_UP),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_FOLDERS),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_COPYTO),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_MOVETO),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_NEWFOLDER),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_COPY),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_CUT),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_PASTE),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_DELETE),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_VIEWS),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//    
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_SEARCH),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_PROPERTIES),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_ADDRESSBAR_GO),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_REFRESH),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_ADDBOOKMARK),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_NEWTAB),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_SHOWCOMMANDPROMPT),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_ORGANIZEBOOKMARKS),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_DELETEPERMANENTLY),
+//		szText,SIZEOF_ARRAY(szText));
+//	/* Double NULL terminated. */
+//	szText[lstrlen(szText) + 1] = '\0';
+//	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//
+//    //bird add
+//    LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_SORT),
+//        szText,SIZEOF_ARRAY(szText));
+//    /* Double NULL terminated. */
+//    szText[lstrlen(szText) + 1] = '\0';
+//    SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+//}
+
 void Explorerplusplus::AddStringsToMainToolbar(void)
 {
-	TCHAR szText[64];
+    TCHAR szText[64];
 
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_BACK),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_FORWARD),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_UP),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_FOLDERS),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_COPYTO),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_MOVETO),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_NEWFOLDER),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_COPY),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_CUT),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_PASTE),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_DELETE),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_VIEWS),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-    
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_SEARCH),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_PROPERTIES),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_ADDRESSBAR_GO),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_REFRESH),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_ADDBOOKMARK),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_NEWTAB),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_SHOWCOMMANDPROMPT),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_ORGANIZEBOOKMARKS),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-	LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_DELETEPERMANENTLY),
-		szText,SIZEOF_ARRAY(szText));
-	/* Double NULL terminated. */
-	szText[lstrlen(szText) + 1] = '\0';
-	SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
-
-    //bird add
-    LoadString(g_hLanguageModule,LookupToolbarButtonTextID(TOOLBAR_SORT),
-        szText,SIZEOF_ARRAY(szText));
-    /* Double NULL terminated. */
-    szText[lstrlen(szText) + 1] = '\0';
-    SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+    //start from back button
+    for(UINT idx = TOOLBAR_BACK; idx< TOOLBAR_MAX; idx++)
+    {
+        LoadString(g_hLanguageModule, LookupToolbarButtonTextID(idx),
+            szText,SIZEOF_ARRAY(szText));
+        /* Double NULL terminated. */
+        szText[lstrlen(szText) + 1] = '\0';
+        SendMessage(m_hMainToolbar,TB_ADDSTRING,(WPARAM)0,(LPARAM)szText);
+    }
 }
 
 /*

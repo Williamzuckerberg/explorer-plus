@@ -213,6 +213,8 @@ typedef HRESULT (STDAPICALLTYPE *DwmInvalidateIconicBitmapsProc)(HWND hwnd);
 #define TOOLBAR_DELETEPERMANENTLY	(TOOLBAR_ID_START + 22)
 #define TOOLBAR_SORT	            (TOOLBAR_ID_START + 23)         //BIRD
 
+#define TOOLBAR_MAX                 (TOOLBAR_ID_START + 24)
+
 /* This represents the TOTAL set off buttons that may be
 placed on the toolbar. */
 const int ToolbarButtonSet[] =
